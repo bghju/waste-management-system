@@ -1,9 +1,10 @@
 <?php
 session_start();
-session_unset();
+
+/* destroy session */
 session_destroy();
 
-// Redirect to HOME page
+/* redirect to home page */
 header("Location: index.php");
 exit();
 ?>
